@@ -1,4 +1,5 @@
 
+var _ = require('lodash');
 
 // query selectors
 var background = document.querySelector("body");
@@ -37,6 +38,6 @@ function randomBackground(){
     background.style.backgroundImage = "linear-gradient(to right, "
     + firstRandom + " , " 
     + secondRandom + ")";
-
+ 
     p.textContent = background.style.backgroundImage;
 }
